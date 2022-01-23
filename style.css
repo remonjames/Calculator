@@ -1,0 +1,96 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #7d7d7e;
+}
+
+.display,
+.result {
+    padding: 10px 5px;
+    margin: 0;
+}
+
+
+.result {
+    margin-top: 20px;
+    text-align: right;   
+}
+
+.container {
+    width: 350px;
+    height: 570px;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    padding: 15px;
+    background-color: #222;
+}
+
+.screen {
+    border: 1px solid black;
+    margin: 20px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    background-color: #535354;
+    color: white;
+    border-radius: 15px;
+}
+
+.buttons {
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.buttons button {
+    border: none;
+    font-size: 25px;
+    width: 70px;
+    height: 63px;
+    border-radius: 50%;
+    color: white;
+}
+
+.orangeBtn {
+    background-color: #ff9f0a;
+}
+
+.greyBtn {
+    background-color: #7d7d7e;
+}
+
+.greenBtn {
+    background-color: #29c840;
+}
+
+.darkGreyBtn {
+    background-color: #535354;
+}
+
+
+#allClear,
+#equals {
+    width: 150px;
+    border-radius: 30px;
+}
+
+.orangeBtn:hover {
+    background-color: #ffb13d;
+}
+
+.greyBtn:hover {
+    background-color: #969696;
+}
+
+.greenBtn:hover {
+    background-color: #49da5f;
+}
+
+.darkGreyBtn:hover {
+    background-color: 	#c45160;
+}
