@@ -79,18 +79,16 @@ body{
     border-radius: 30px;
 }
 
-.orangeBtn:hover {
-    background-color: #ffb13d;
-}
-
-.greyBtn:hover {
-    background-color: #969696;
-}
-
-.greenBtn:hover {
-    background-color: #49da5f;
-}
-
 .darkGreyBtn:hover {
     background-color: 	#c45160;
+}
+
+.greyBtn:hover,
+.orangeBtn:hover,
+.greenBtn:hover {
+    box-shadow: inset 0 0 0 10em rgba(255, 255, 255, 0.2);
+  }
+
+.pressed {
+    box-shadow: inset 0 0 0 10em rgba(0, 0, 0, 0.2);
 }
