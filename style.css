@@ -4,10 +4,19 @@ body{
     background-color: #7d7d7e;
 }
 
+.currOperation,
 .display,
 .result {
-    padding: 10px 5px;
+    padding: 4px 5px;
     margin: 0;
+    font-size: 28px;
+    color: white;
+
+}
+
+.currOperation {
+    font-size: 18px;
+    color: #ddd
 }
 
 
@@ -35,7 +44,7 @@ body{
     display: flex;
     flex-direction: column;
     background-color: #535354;
-    color: white;
+ 
     border-radius: 15px;
 }
 
@@ -73,8 +82,7 @@ body{
 }
 
 
-#allClear,
-#equals {
+.buttons .longBtn {
     width: 150px;
     border-radius: 30px;
 }
