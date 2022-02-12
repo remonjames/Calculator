@@ -9,7 +9,6 @@ let num2 = "";
 
 let num1Clicked = false;
 let num2Clicked = false;
-let decimalClicked = false;
 
 numBtns.forEach(function (button) {
     button.addEventListener("click", function (e) {
@@ -43,6 +42,7 @@ operatorBtn.forEach(function (button) {
             emptyDisplay();
             updateCurrOperation();
             num1Clicked = false;
+            decimalBtn.disabled = false;
         }
 
     })
@@ -67,36 +67,26 @@ equals.addEventListener("click", function (e) {
         }
         if (operation === "add") {
             result = parseFloat(num1) + parseFloat(num2);
-            resultDisplay.textContent = result;
-            equalsClicked = true;
-            operatorClicked = false;
-            updateCurrOperation();
-            emptyDisplay();
+
         } else if (operation === "subtract") {
             console.log(num1);
             console.log(num2);
             result = parseFloat(num1) - parseFloat(num2);
-            resultDisplay.textContent = result;
-            equalsClicked = true;
-            operatorClicked = false;
-            updateCurrOperation();
-            emptyDisplay();
+
         } else if (operation === "multiply") {
             result = parseFloat(num1) * parseFloat(num2);
-            resultDisplay.textContent = result;
-            equalsClicked = true;
-            operatorClicked = false;
-            updateCurrOperation();
-            emptyDisplay();
+
         } else if (operation === "divide") {
             result = parseInt(num1) / parseInt(num2);
-            resultDisplay.textContent = result;
-            equalsClicked = true;
-            operatorClicked = false;
-            updateCurrOperation();
-            emptyDisplay();
+
         }
     }
+    resultDisplay.textContent = result;
+    equalsClicked = true;
+    operatorClicked = false;
+    updateCurrOperation();
+    emptyDisplay();
+    decimalBtn.disabled = false;
     num2Clicked = false;
 });
 
@@ -145,3 +135,9 @@ backspace.addEventListener("click", function (e) {
         display.textContent = num2;
     }
 });
+
+
+decimalBtn = document.querySelector(".decimal");
+decimalBtn.addEventListener("click", function (e) {
+    decimalBtn.disabled = true;
+})
