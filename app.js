@@ -44,7 +44,6 @@ operatorBtn.forEach(function (button) {
             num1Clicked = false;
             decimalBtn.disabled = false;
         }
-
     })
 })
 
@@ -80,14 +79,15 @@ equals.addEventListener("click", function (e) {
             result = parseInt(num1) / parseInt(num2);
 
         }
+
+        resultDisplay.textContent = result;
+        equalsClicked = true;
+        operatorClicked = false;
+        updateCurrOperation();
+        emptyDisplay();
+        decimalBtn.disabled = false;
+        num2Clicked = false;
     }
-    resultDisplay.textContent = result;
-    equalsClicked = true;
-    operatorClicked = false;
-    updateCurrOperation();
-    emptyDisplay();
-    decimalBtn.disabled = false;
-    num2Clicked = false;
 });
 
 function emptyDisplay() {
